@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- 
+    index.html is developed by https://github.com/AlishaBeg/
+ -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- mother container all tags -->
+    <div id="mother-container">
+        
+        <!-- form container that set center box -->
+        <div class="form-container">
+
+            <!-- banner that set heading -->
+            <div class="banner">
+
+                <h1> Welcome Back! </h1>
+
+                <p> Sign in to continue to HTB Academy </p>
+
+                <img src="./new-logo-htb.svg" alt="" id="logo">
+
+            </div>
+            
+            <!-- login form that take email or password -->
+            <form action="#" method="POST" id="singin">
+
+                <label for=""> E-mail </label>
+                <input type="email" name="email" placeholder=":" class="fld">
+    
+                <label for=""> Password </label>
+                <input type="password" name="password" placeholder=":" class="fld">
+
+                <label id="remember"> <input type="checkbox" name=""/> Remember Me</label>
+
+                <input type="reset" class="btn" value="Log In">
+                
+                <!-- optional link anchors -->
+                <div id="option">
+
+                    <a href="#" class="link"> Log in with company SSO </a>
+
+                    <span> | </span>
+
+                    <a href="#" class="link"> Forget your password? </a>
+
+                </div>
+    
+            </form>
+
+        </div>
+        
+        <!-- footer section of the container -->
+        <div id="footer">
+
+            <div id="join"> Don't have an account ? <a href="#" class="join_link"> Register now </a> </div>
+
+            <div id="bottom"> Power by <img src="./logo-htb.svg" alt="footer" class="title"> </div>
+
+        </div>
+
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
