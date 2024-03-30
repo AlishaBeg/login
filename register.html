@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- 
+    index.html is developed by https://github.com/AlishaBeg/
+ -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- mother container all tags -->
+    <div id="mother-container">
+        
+        <!-- form container that set center box -->
+        <div class="form-container">
+
+            <!-- banner that set heading -->
+            <div class="banner">
+
+                <h1> Register </h1>
+
+                <p> Start your learning journey! </p>
+
+                <img src="./new-logo-htb.svg" alt="" id="logo">
+
+            </div>
+            
+            <!-- login form that take email or password -->
+            <form action="#" method="POST" id="register">
+
+                <label for=""> Fullname </label>
+                <input type="text" name="fullname" placeholder="" class="fld">
+    
+                <label for=""> Username </label>
+                <input type="text" name="username" placeholder="" class="fld">
+
+                <label for=""> Email </label>
+                <input type="email" name="email" placeholder="" class="fld">
+
+                <label for=""> Confirm Email </label>
+                <input type="email" name="confirmemail" placeholder="" class="fld">
+
+                <label for=""> Password </label>
+                <input type="password" name="password" placeholder="" class="fld">
+
+                <label for=""> Confirm Password </label>
+                <input type="password" name="confirmpassword" placeholder="" class="fld">
+
+                <label for=""> Country </label>
+                <select name="country" class="fld">
+                    <option class="fld"> Indian </option>
+                    <option class="fld"> Afganistan </option>
+                    <option class="fld"> Japan </option>
+                </select>
+
+                <label for=""> Date of Birth </label>
+                <input type="date" name="dob" placeholder="" class="fld">
+
+                <label id="remember"> <input type="checkbox" name=""/> E-mail me product updates and newsletters.</label>
+
+                <input type="reset" class="btn" value="Register">
+                
+                <!-- optional link anchors -->
+                <div id="option">
+
+                    <a href="#" class="link"> By registering you agree to our </a>
+
+                    <a href="#" class="join_link">Terms of Service</a>
+
+                    <span>,</span>
+
+                    <a href="#" class="join_link">Privacy Policy</a>
+
+                    <span> <br> and </span>
+
+                    <a href="#" class="join_link">Acceptable Use Policy</a>
+
+                </div>
+    
+            </form>
+
+        </div>
+        
+        <!-- footer section of the container -->
+        <div id="footer">
+
+            <div id="join"> Already have an account ? <a href="./index.html" class="join_link"> Login </a> </div>
+
+            <div id="bottom"> 2003-2004 &copy; HTB. Powerd by <img src="./logo-htb.svg" alt="footer" class="title"> </div>
+
+        </div>
+
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
