@@ -137,6 +137,10 @@ label {
     margin-top: 10px 0;
     text-align: center;
 }
+#option .join_link {
+    font-size: 14px;
+    font-weight: normal;
+}
 .link {
     display: inline-block;
     line-height: 2rem;
@@ -159,6 +163,9 @@ label {
     font-weight: bold;
     color:var(--success);
 }
+.join_link:hover {
+    font-weight: normal;
+}
 #bottom {
     display: flex;
     align-items: center;
@@ -170,4 +177,15 @@ label {
 .title {
     width: 150px;
     padding-left: 10px;
+}
+/* register */
+
+#register label {
+    color:var(--dark);
+}
+#register .fld {
+    color:var(--secondary);
+}
+#register .fld:focus {
+    border: none;
 }
