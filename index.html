@@ -1,139 +1,79 @@
 <!DOCTYPE html>
-
+<!-- 
+    index.html is developed by https://github.com/AlishaBeg/
+ -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> &copy; Login </title>
-    
-    <style>
-        * {
-	        user-select: none;
-	        margin:0;
-	        padding:0;
-	        color:#2ecc71;
-	        text-decoration: none;
-	        font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-	        box-sizing: border-box;
-	        scroll-behavior: smooth;
-        }
-        body {
-        
-            background:#10151b;
-        }
-        h6 {
-            padding:1rem 0;
-            line-height:2rem;
-            font-size:16px;
-            font-weight:normal;
-        }
-        form {
-            max-width:500px;
-            margin:10vh auto;
-        }
-        legend {
-            padding:10px 1rem;
-            font-size:1.2rem;
-        }
-        fieldset{        
-            padding:1rem 3rem;
-            border:5px solid #343a40;
-        }
-        label {
-            display:block;
-            margin-top:1rem;
-            padding:1rem 0;
-            font-size:1rem;
-        }
-        input {
-            display:block;
-            width:100%;
-            padding:10px;
-            outline:none;
-            font-size:1rem;
-            background:transparent;
-            border:2px solid #16a085;
-        }
-        input:focus {
-            border-color:#2ecc71;
-        }
-        #button {
-            width:150px;
-            margin:3rem 0;
-            padding:10px 1rem;
-            font-size:1rem;
-            font-weight:bold;
-            color:#000;
-            background:#27ae60;
-            outline: none;
-	        border: none;
-        }
-        #button:hover {
-            background:#2ecc71;
-            box-shadow: -2px -2px 70px #2ecc71;
-        }
-        
-    </style>
-    
+    <title>Document</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <main id="mother_wrapper">
-    
-        <section>
+    <!-- mother container all tags -->
+    <div id="mother-container">
         
-            <form action="#">
-                <fieldset>
-                    <legend></legend>
-                    
-                    <h6> load ... </h6>
-                    
-                    <h5></h5>
-                    
+        <!-- form container that set center box -->
+        <div class="form-container">
 
-                    <label> Enter Username </label>
-                    <input type="text" class="field" placeholder="name">                
+            <!-- banner that set heading -->
+            <div class="banner">
 
-                    <label> Enter Password </label>
-                    <input type="password" class="field" placeholder="code">                
+                <h1> Welcome Back! </h1>
 
-                    <input type="button" value="Login" id="button">
+                <p> Sign in to continue to HTB Academy </p>
+
+                <img src="./new-logo-htb.svg" alt="" id="logo">
+
+            </div>
+            
+            <!-- login form that take email or password -->
+            <form action="#" method="POST" id="singin">
+
+                <label for=""> E-mail </label>
+                <input type="email" name="email" placeholder=":" class="fld">
+    
+                <label for=""> Password </label>
+                <input type="password" name="password" placeholder=":" class="fld">
+
+                <label id="remember"> <input type="checkbox" name=""/> Remember Me</label>
+
+                <input type="reset" class="btn" value="Log In">
                 
-                </fieldset>
-            </form>    
-            
-        </section>
+                <!-- optional link anchors -->
+                <div id="option">
+
+                    <a href="#" class="link"> Log in with company SSO </a>
+
+                    <span> | </span>
+
+                    <a href="#" class="link"> Forget your password? </a>
+
+                </div>
     
-    </main>
-    
-    <script>
-    
-        document.getElementsByTagName("legend")[0].innerHTML = navigator.appCodeName 
+            </form>
+
+        </div>
         
-        if (navigator.doNotTrack) {
-            document.getElementsByTagName("h5")[0].innerHTML = "[STATUS:PASS] ----------------------" 
-        } else {
-            document.getElementsByTagName("h5")[0].innerHTML = "[STATUS:FAIL] ----------------------" 
-        }
-    
-        setInterval(() => {
-            document.getElementsByTagName("h6")[0].innerHTML = Date().toLocaleString()
-            
-        }, 1000) 
-        
-        document.getElementById("button").onclick = () => {
-            console.log("done")
-            if (document.getElementsByClassName("field")[1].value == "1911@elvisRoot#ME" && document.getElementsByClassName("field")[0].value == "myroot")
-            {
-                window.open("https://help.hackthebox.com/en/","_self")       
-            }
-        }
-        console.clear()
-        
-    </script>
+        <!-- footer section of the container -->
+        <div id="footer">
+
+            <div id="join"> Don't have an account ? <a href="#" class="join_link"> Register now </a> </div>
+
+            <div id="bottom"> Power by <img src="./logo-htb.svg" alt="footer" class="title"> </div>
+
+        </div>
+
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
 
 </body>
 
