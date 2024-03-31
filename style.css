@@ -189,3 +189,18 @@ label {
 #register .fld:focus {
     border: none;
 }
+/* information */
+#information li {
+    margin: 5px;
+    margin-left: 1rem;
+    padding: 5px 1rem;
+    list-style-type:none;
+    display: flex;
+    width: 100%;
+    border-left: 1px solid #a4b1cd;
+    font-family: var(--font-family-monospace);
+}
+.packet {
+    color:var(--success);
+    justify-self: flex-end;
+}
