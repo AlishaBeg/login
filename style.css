@@ -51,7 +51,7 @@ body {
 .form-container
 {
     display: grid;
-    width: 550px;
+    width: 500px;
     margin: 10vh auto 5vh auto;
     background: var(--light);
     border-radius: 5px;
@@ -179,7 +179,6 @@ label {
     padding-left: 10px;
 }
 /* register */
-
 #register label {
     color:var(--dark);
 }
@@ -187,6 +186,17 @@ label {
     color:var(--secondary);
 }
 #register .fld:focus {
+    border: none;
+}
+/* forget */
+
+#forget label {
+    color:var(--dark);
+}
+#forget .fld {
+    color:var(--secondary);
+}
+#forget .fld:focus {
     border: none;
 }
 /* information */
@@ -203,4 +213,19 @@ label {
 .packet {
     color:var(--success);
     justify-self: flex-end;
+}
+
+@media screen and (max-width:550px) {
+
+.form-container {
+    width:90% !important;
+    margin: 5vh auto;
+}
+#footer {
+    width: 90%;
+    margin: 2rem auto 5vh auto;
+}
+#bottom {
+    flex-wrap:wrap;
+}
 }
